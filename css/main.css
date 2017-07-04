@@ -1,0 +1,274 @@
+/*It changed the color of all the writing on the page to black*/
+* {
+  color: #000;
+}
+/*selects the body tag in order to add the style the attributes in CSS*/
+body {
+  /*makes the background color white*/
+  background: none repeat scroll 0 0 #fff;
+  /*supposed to change the text color to a difference color but not a noticeable difference*/
+  color: #222222;
+  /*changes the margin to 0 so the content of the page shifted to the left*/
+  margin: 0;
+}
+
+/*selcts the anchor tags in order to style it's attributes in CSS*/
+a{
+  /*supposed to change the color of the anchors to a blackish color but there isn't a noticeable difference from the preexisting color*/
+  color: #222222
+  /*removes the default underline that the anchor tags had*/
+  text-decoration: none;
+}
+
+/*selects the anchor tags when they are being hovered over*/
+a:hover {
+  /*slightly changes the color of the anchor elements when hovered over but not really noticeable*/
+  color: #222222;
+  /*allows when the anchor tags are hovered over the underline disappears*/
+  text-decoration: none;
+}
+
+/*selects the anchor tag with the class "button:hover"*/
+a.button:hover {
+  /**/
+  text-decoration: none;
+}
+
+/*selects the class of ".top-navigation"*/
+.top-navigation {
+  /*it moves the attributes under .top-navigation to the right and moves up the rest of the content to where it was*/
+  float: right;
+  /*gave a margin to the navigation attributes so that they aren't completely flushed with the right side of the screen*/
+  margin-right: 25px;
+}
+
+/*selcts the list tags inside the class of top-navigation in order to custimize it in CSS*/
+.top-navigation li{
+  /*takes away the bullet points from the list items in the navigation tab*/
+  list-style: none;
+  /*it changes the list items to being side by side horizontally instead of vertically in the top right corner*/
+  display: inline-block;
+  /*aligns the text to the right but not reaaly a noticeable difference*/
+  text-align: right;
+  /*gave padding to the elements in the navigation bar so thst they're not all squished together*/
+  padding: 5px 10px 0 0;
+  /*no noticeable difference*/
+  verticle-align: bottom;
+  /*spaces out navigation bar even further than with just the padding*/
+  margin:5px 10px 0 0;
+  /*changed the font of the elements in the navigation bar which made the smaller than they were*/
+  font-size: 13px;
+  /**/
+}
+
+/*selcts the font assome class to be able to custimize it in CSS*/
+.fa {
+  /*changed the font size which made the icons in the navigation bar larger, such as the bell and 9 dots*/
+  font-size: 20px;
+  /*no noticeable difference in the webpage*/
+  verticle-align: top;
+  /*changed opacity which made the elements appear a bit lighter than the other elements*/
+  opacity: 0.7;
+  /*not really any noticeable difference*/
+  cursor: default;
+}
+
+/*it selects the font awesome icons when they are being hovered on*/
+.fa:hover {
+  /*when the icons are hovered on the opacity becomes 1 which makes the color bolder*/
+  opacity: 1.0;
+}
+
+/*selects the elements with share-button class to be able to custimize them in CSS*/
+.share-button {
+  /*put a gray background on the share button*/
+  background-color: #f2f2f2;
+  /*adds padding to the share button which makes the share button appear bigger*/
+  padding: 7px 15px;
+  /*not much of a noticeable difference*/
+  cursor: default;
+  /*not much of a noticeable difference*/
+  position: relative;
+  /*the share button shifted slightly*/
+  top: -3px;
+}
+
+/*selct .share-button tag to customize it in CSS when it is hovered over*/
+.share-button:hover {
+  /*changed the color of the share button when the cursor is hovered over it to a darker gray*/
+  background-color: #E1E1E1;
+}
+
+/*selcts the class of profile-img*/
+.profile-img {
+  /*changed the radius of the profile picture in order to make the image round*/
+  border-radius: 25px;
+  /*changed the height of the profile image*/
+  height: 32px;
+  /*changed the width of the profile picture*/
+  width: 32px;
+  /*no significant change*/
+  position: relative;
+  /*brought the picture down a bit*/
+  top: 9px;
+}
+
+/*selcts the class of search-box*/
+.search-box {
+  /*allows for the search box elements to hover over the other elements*/
+  position: absolute;
+  /*increased the padding on the search box which brought it further down the page*/
+  margin-top: 75px;
+  /*changed the width of the search box*/
+  width: 100%;
+}
+
+/*selcts the img element in the search-box class*/
+.search-box img {
+  /*brought the search box even further down*/
+  padding: 142px 0 24px 0px;
+  /*causes the search box to start on a new line than the search box image*/
+  display: block;
+  /*not much noticeable change*/
+  margin: 0 auto;
+}
+
+/*selects the input element within the search-box class*/
+.search-box input {
+  /*increased the area inside the search-box*/
+  width: 600px;
+  /*no noticeable difference*/
+  margin: 0 auto;
+  /*added padding to the inside of the search box which made it taller and wider*/
+  padding: 5px;
+  /*changed the border which caused the search box to decrease in size a little bit*/
+  border: 1px solid #d9d9d9;
+  /*increased the font size which also caused the seacrh box to get bigger as well*/
+  font-size: 16px;
+  /*rounded the corners of the search box so that they aren't sharp corners*/
+  border-radius: 5px;
+  /*altered the display property of the inouts which caused the search box to become centered*/
+  display: block;
+}
+
+/*selcts the tag focus within the element of input that has the class of search box*/
+.search-box input:focus {
+  /*no significant change*/
+  border-color: #f5f5f5;
+}
+
+/*selects all elements that have the search buttn class*/
+.search-buttons {
+  /*centers the two buttons below the search box*/
+  text-align: center;
+  /*no noticeable change*/
+  padding-left: 0;
+}
+
+/*selects the tag of buttons within the class of search-buttons*/
+.search-buttons button {
+  /*changes the button background to a lighter gray color*/
+  background-color: #f5f5f5;
+  /*changes the border of the buttons*/
+  border: 1px solid rbga(0, 0, 0, 0.1);
+  /*no noticeable change*/
+  border-radius: 2px;
+  /*changed the color a bit*/
+  color: #666666;
+  /*changed the font size which made the buttons grow bigger with the text inside*/
+  font-size: 14px;
+  /*made the text with the buttons bold*/
+  font-weight: bold;
+  /*added more line height whcih increased the space between the text and the border*/
+  line-height: 27px;
+  /*increased the space between the buttons and the search box which caused them to move down a bit and spread out*/
+  margin: 17px 6px;
+  /*caused the buttons to become a little bit longer rectangles*/
+  padding: 0 12px;
+  /*no noticeable difference*/
+  display: inline-block;
+  /*changes the cursor when it is over the buttons into a pointed hand instead of just an arrow*/
+  cursor: pointer;
+}
+
+/*button tag within the search button class when its hovered over*/
+.search-button button:hover{
+  /*not really any noticeable difference*/
+  background-color: #f8f8f8;
+  /*dont really se a difference*/
+  border: 1px solid #c6c6c6;
+  /*dont really se a difference*/
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  /*dont really se a difference*/
+  color: #333333;
+}
+
+/*selects the class of bottom site links*/
+.bottom-site-links {
+  /*moves the links form the top left corner to the bottom left corner*/
+  bottom: 0 !important;
+  /*no noticeable difference*/
+  position: absolute;
+  /*no noticeable difference*/
+  width: 100%;
+  /*changes the background color to grayish*/
+  background-color: #f2f2f2;
+  /*adds a light border line to the top of the box*/
+  border-top: 1px solid #e4e4e4;
+}
+
+/*selcts bith classes of right and left side links*/
+.left-site-links, .right-site-links {
+  /*the links at the bottom of the page got closer together with little spacing between each other*/
+  margin: 0;
+}
+
+/*selects the class of left-site-links*/
+.left-site-links {
+  /*made the links into two columns instead of just one*/
+  float: left;
+  /*adding some padding to the left side*/
+  padding-left: 20px;
+}
+
+/*selects the class of right site links*/
+.right-site-links {
+  /*moves the second column all the way to the right side of the page*/
+  float: right;
+  /*added some padding to the right side so that theres some space between the text and the right side of the page*/
+  padding-right: 10px;
+}
+
+/*selects li tags in both right and left site links classes*/
+.left-site-links li, .right-site-links li{
+  /*took away the bullet points from the listed links on the bottom of the page*/
+  list-style: none;
+  /*allows them to stay in the same row instead of each one starting a new line*/
+  display: inline;
+  /*increases the space taken up by the text of the links causing the rectangle at the bottom to get bigger*/
+  line-height: 40px;
+}
+
+/*first anchor tags inside of the right site links class*/
+.right-site-links a:first-child {
+  /*spaced out the links on the bottom right side of the page*/
+  padding-right: 8px;
+}
+
+/*selects the second and third anchor tag within the left site links class*/
+.left-site-links li:nth-child(2), .left-site-links li:nth-child(3) {
+  /*added spacing between the listed links on the bottom left side of the page*/
+  margin: 7px;
+}
+
+/*selects all anchor tags within both left and right site links classes*/
+.left-site-links li a, .right-site-links li a {
+  /*changed the color of the text of the links to a lighter gray*/
+  color: #666666;
+  /*spaced out the links even more*/
+  margin: 2px 10px 0;
+  /*not much difference*/
+  letter-spacing: 0.1px;
+  /*made the font size smaller*/
+  font-size: 14px;
+}

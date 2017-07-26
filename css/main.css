@@ -272,3 +272,55 @@ a.button:hover {
   /*made the font size smaller*/
   font-size: 14px;
 }
+
+@media (max-width:474px) {
+  * {
+    font-size: 12px;
+  }
+  .profile-img {
+    display: none;
+  }
+  ul.nav {
+    margin-right: 0;
+  }
+  ul.nav li {
+    margin-right: 0;
+  }
+  ul.left {
+    width: 70%;
+}
+
+@media (max-width: 750px) {
+  .search-box input {
+    width: 75%;
+  }
+}
+
+@media (max-width: 595px) {
+  .right {
+    display: none;
+  }
+  ul.left {
+    width: 60%;
+    margin: 10px auto;
+    float: none;
+  }
+}
+
+@media (max-width: 400px) {
+  ul.left {
+    width: 80%;
+  }
+}
+
+@media (max-width: 360px) {
+  ul.left {
+    width: 80%;
+  }
+}
+
+@media (max-width: 350px) {
+  ul.left {
+    width: 90%;
+  }
+}
